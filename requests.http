@@ -23,3 +23,24 @@ POST {{host}}/api/triangulos/analisar
 Content-Type: application/json
 
 { "a": 2, "b": 3, "c": 4 }
+
+### 0-0-0 (esperado NaoEhTriangulo)
+GET {{host}}/api/triangulos/classificar?a=0&b=0&c=0
+
+### 0-3-3 (esperado NaoEhTriangulo)
+GET {{host}}/api/triangulos/classificar?a=0&b=3&c=3
+
+### -1-2-2 (esperado NaoEhTriangulo)
+GET {{host}}/api/triangulos/classificar?a=-1&b=2&c=2
+
+### NaN (esperado NaoEhTriangulo)
+GET {{host}}/api/triangulos/classificar?a=NaN&b=1&c=1
+
+### Infinity (esperado NaoEhTriangulo)
+GET {{host}}/api/triangulos/classificar?a=Infinity&b=1&c=1
+
+### POST 3-4-5 em outras posicoes: 4-5-3
+POST {{host}}/api/triangulos/analisar
+Content-Type: application/json
+
+{ "a": 4, "b": 5, "c": 3 }
