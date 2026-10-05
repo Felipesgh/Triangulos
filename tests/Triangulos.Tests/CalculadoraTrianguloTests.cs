@@ -90,6 +90,15 @@ public class CalculadoraTrianguloTests
     {
         Assert.False(CalculadoraTriangulo.EhRetangulo(a, b, c));
     }
+    // RN07: tolerancia relativa. Com decimais, x*x + y*y raramente e exatamente igual a z*z.
+    [Theory]
+    [InlineData(0.5, 1.2, 1.3)]
+    [InlineData(1.3, 0.5, 1.2)]
+    [InlineData(1.2, 1.3, 0.5)]
+    public void EhRetangulo_TrianguloRetanguloComDecimais_RetornaTrue(double a, double b, double c)
+    {
+        Assert.True(CalculadoraTriangulo.EhRetangulo(a, b, c));
+    }
 
     // ---------- RN08: ClassificarPorAngulo ----------
     [Theory]
