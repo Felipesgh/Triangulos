@@ -39,7 +39,7 @@ public static class CalculadoraTriangulo
         var y = lados[1];
         var z = lados[2];
 
-        return x * x + y * y == z * z;
+        return Math.Abs((x * x + y * y) - z * z) <= 1e-9 * z * z;
     }
 
     public static TipoPorAngulo ClassificarPorAngulo(double a, double b, double c)
