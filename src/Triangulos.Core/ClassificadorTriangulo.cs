@@ -9,12 +9,12 @@ public static class ClassificadorTriangulo
             return false;
         }
 
-        if (a + b < c)
+        if (a + b <= c)
         {
             return false;
         }
 
-        if (a + c < b)
+        if (a + c <= b)
         {
             return false;
         }
