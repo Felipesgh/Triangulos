@@ -33,7 +33,13 @@ public static class CalculadoraTriangulo
     {
         GarantirTriangulo(a, b, c);
 
-        return a * a + b * b == c * c;
+        var lados = new[] { a, b, c };
+        Array.Sort(lados);
+        var x = lados[0];
+        var y = lados[1];
+        var z = lados[2];
+
+        return x * x + y * y == z * z;
     }
 
     public static TipoPorAngulo ClassificarPorAngulo(double a, double b, double c)
