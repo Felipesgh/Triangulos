@@ -1,0 +1,28 @@
+Summary
+  Generated on: 04/10/2026 - 22:02:14
+  Coverage date: 04/10/2026 - 21:56:07
+  Parser: MultiReport (2x Cobertura)
+  Assemblies: 1
+  Classes: 6
+  Files: 5
+  Line coverage: 100%
+  Covered lines: 97
+  Uncovered lines: 0
+  Coverable lines: 97
+  Total lines: 175
+  Branch coverage: 100% (38 of 38)
+  Covered branches: 38
+  Total branches: 38
+  Method coverage: 100% (20 of 20)
+  Full method coverage: 100% (20 of 20)
+  Covered methods: 20
+  Fully covered methods: 20
+  Total methods: 20
+
+Triangulos.Core                                 100%
+  Triangulos.Core.AnalisadorTriangulo           100%
+  Triangulos.Core.AnaliseTriangulo              100%
+  Triangulos.Core.Angulos                       100%
+  Triangulos.Core.CalculadoraTriangulo          100%
+  Triangulos.Core.ClassificadorTriangulo        100%
+  Triangulos.Core.TrianguloInvalidoException    100%
